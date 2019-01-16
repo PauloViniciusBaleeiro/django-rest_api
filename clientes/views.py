@@ -7,8 +7,7 @@ from rest_framework import generics, permissions
 class ClientesViewSet(generics.ListCreateAPIView):
     queryset = Clientes.objects.all()
     serializer_class = ClientesSerializer
-    # permission_classes = ()
+    permission_classes = (permissions.IsAuthenticated,)
+
 
 clientelist = ClientesViewSet.as_view()
-
-
