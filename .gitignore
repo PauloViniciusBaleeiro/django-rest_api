@@ -2,4 +2,5 @@
 *.idea
 *__pyc__
 !*/migrations/__init__.py
+!clientes/migrations/init.py
 */migrations/*
